@@ -1,0 +1,166 @@
+html, body{
+    height: 100%;
+ }
+ body{
+   position: relative;
+   left: 0;
+   right: 0;
+   background-image:url('../img/Dark_Blue_Background_by_Vik_for_Stuff.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   max-width: 100%;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-align: center;
+   align-items: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: #f5f5f5;
+
+ }
+       
+input{
+     outline: none;
+     box-shadow:none !important;  
+}
+ #mainone-logo{
+   padding-top: 50px;
+ }
+ #headWord{
+     padding-top: 20px;
+     color: #fff;
+     font-weight: 400;
+ }
+ .inp-fields{
+   border: none;
+   height: 50px;
+ }
+ .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .form-labels{
+   font-size: 700;
+   font-size: 22px;
+   color: #fff;
+ }
+ .login-error{
+   color: #B22222;
+   font-size: 20px;
+   font-weight: 500;
+   background: #fff;
+   width: 100%;
+   /*padding: 10px;*/
+   margin: auto;
+   max-width: 550px;
+   min-width: 250px;
+ }
+
+ #login_button{
+   font-weight: 500;
+ }
+ #login_button:focus{
+   outline: none !important;
+   box-shadow: none !important;
+ }
+ #login_button:hover{
+   outline: none !important;
+   box-shadow: none !important;
+ }
+ /*EMAIL DIV*/
+ #email-div{
+   display: inline-flex;
+ }
+ #email-ico{
+   background:   #F5F5F5;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   width: 50px;
+ }
+
+ #email{
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+ }
+ #img-email{
+   /* width: 50px; 
+   height: 40px; */
+   display: inline;
+   padding-top: 10px;
+ }
+
+ /*PASSWORD DIV*/
+ #pass-div{
+   display: inline-flex;
+ }
+ #pass-ico{
+   background:   #F5F5F5;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   width: 50px;
+ }
+ #img-pass{
+   padding-top: 5px;
+   height: 50px;
+   padding-bottom: 5px;
+ }
+ #password{
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+ }
+ 
+ .form-signin {
+   width: 100%;
+   max-width: 800px;
+   min-width: 500px;
+   padding: 15px;
+   margin: auto;
+   margin-top: -5px;
+ }
+ .form-signin .checkbox {
+   font-weight: 400;
+ }
+ .form-signin .form-control {
+   position: relative;
+   box-sizing: border-box;
+ }
+ .form-signin .form-control:focus {
+   z-index: 2;
+ }
+
+
+ .login-progress{
+   margin: auto;
+   max-width: 550px;
+   min-width: 250px;
+   height: 4px;
+   position: relative;
+   background: #7044D7;
+ }
+
+ .login-progress::before{
+   position: absolute;
+   content: "";
+   width: 0%;
+   height: 4px;
+   top: 0;
+   left: 0;
+   background-color: #fff;
+   animation: loginwait 1s infinite;
+   -webkit-animation: loginwait 1s infinite;
+   /*-moz-animation: wait 1s infinite;*/
+ }
+
+ @keyframes loginwait{
+   10%{width: 10%}
+   30%{width: 30%}
+   50%{width: 50%}
+   70%{width: 70%}
+   100%{width: 100%}
+ }

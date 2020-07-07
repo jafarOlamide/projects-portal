@@ -1,0 +1,737 @@
+html, body{
+  box-sizing:border-box;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  list-style: none;
+}
+
+@media (max-width: 576px){
+  #wrapper-major{
+    min-width: 500px;
+    position: static;
+  }
+}
+
+button:focus{
+  outline: none !important;
+}
+#wrapper-major{
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+  }
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:   #A9A9A9;
+}
+.form-control:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/*-----------------------------
+------PROJECT LIST DIV---------
+------------------------------*/
+
+  #projs_div{
+    height: 100%;
+    max-height: 100%;
+    min-height: 90%;
+    background: blue;
+    border-bottom: none;
+  }
+  #project_list_header{
+    padding-top: 20px;
+    height: 150px;
+    max-height: 150px;
+    background: #F5F5F5;
+}
+  #projectlist_div{
+    background: #fff;
+    overflow-y: scroll;
+    height: 545px;
+    max-height: 545px;
+}
+#option-select{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#option-select a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+#option-select ul li{
+  padding-top: 5px;
+}
+#option-select a:hover{
+  text-decoration: none;
+  color:  #778899;
+ 
+}
+#closesideBar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.option-li{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.info-li{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#option-icon{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /*height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;*/
+}
+
+form.search-example input[type=text] {
+  padding: 10px;
+  padding-left: 15px;
+  float: left;
+  width: 80%;
+}
+form.search-example button {
+  position: relative;
+  float: left;
+  width: 20%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  background: #fff;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+form.search-example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#search_panel{
+  border: none;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.project_lists{
+  margin-top: 30px;
+}
+
+.project_lists a{
+  color: black;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.project_lists a:hover{
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#search_pane{
+  padding-top: 10px;
+}
+@media (max-width: 640px) {
+}
+/*-----------------------------
+--------UPDATES DIV------------
+------------------------------*/
+.opt-ico{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#update_div{
+ height: 695px;
+ max-height: 695px;
+ background: #DCDCDC;
+}
+.proj_title_txt{
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18;
+  padding-left: 0px
+}
+
+#update_div_header{
+  padding: 20px;
+  background: #F5F5F5;
+  border-right: solid 1px #DCDCDC;
+  height: 80px;
+  max-height: 80px;
+  border-left: solid 1px #DCDCDC;
+}
+#update_inputs_div{
+  background: #FAF0E6 url(../img/global-vc1.jpg) center center;
+  height: 555px;
+  max-height: 555px;
+  overflow-y: scroll;
+}
+.updates_elem{
+    background: #fff;
+    min-width: 180px;
+    width: 220px;
+    max-width: 280px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+.updates_time{
+  float: right;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.updates_date{
+  float: left;
+  font-size: 12px;
+  font-weight: 500;
+}
+.date_div{
+  display: flex;
+  padding-top: 7px;
+}
+
+.user-icon-div{
+  display: flex;
+}
+.updated_by{
+  margin-bottom: -15px;
+}
+.user-icon{
+  font-size: 14px;
+  color: #00008B;
+  font-weight: 500;
+}
+
+.arrow-down-icon{
+  /*width: 1.3vw;
+  height: 1.4vh;*/
+  width: 18px;
+  height: 22px;
+}
+.delUpdBtn{
+  background: none;
+  border: none;
+  outline: none;
+}
+.delUpdBtn:hover{
+  cursor: pointer;
+}
+.user-select{
+  background: #fff;
+  position: absolute;
+  z-index: 500;
+  top: 100px;
+  min-width: 200px;
+  left: 200px;
+  right: 100px;
+  padding-bottom: 10px;
+  border: 0.5px solid #F5F5F5;
+  border-radius: 7px;
+}
+.user-select a{
+  text-decoration: none;
+  color: #708090;
+  font-weight: 400;
+}
+.user-select ul li{
+  padding-top: 5px;
+}
+.user-select a:hover{
+  text-decoration: none;
+}
+#submit_update_div{
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 10px;
+  padding-bottom: 0 !important;
+  width: 100%;
+}
+
+
+#update_input{
+    border-radius: 20px;
+    border: none;
+    resize: none;
+    height: 40px;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+
+#update_btn{
+    border-radius: 50px;
+    background-color: #1D5394;
+    color: #fff;
+    font-weight: 500;
+}
+
+#update_btn:hover{
+    background-color: #1D5394;
+    outline: none;
+}
+#update_btn:focus{
+    background-color: #1D5394;
+    outline: none;
+}
+
+/*-----------------------------
+-------PROJECT INFO DIV--------
+------------------------------*/
+
+#info_div{
+  height: 695px;
+  max-height: 695px;
+  background: #F5F5F5;
+  margin-right: 0px; 
+  margin-left: 0px;
+  padding-right: 0px;
+}
+
+#info_header{
+  padding-top: 20px;
+  height: 80px;
+  max-height: 150px;
+  background: #F5F5F5;
+  padding-bottom: 50px;
+}
+#info-icon{
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#info-select{
+  background:   #778899;
+  /*background: #fff;
+  position: absolute;
+  z-index: 500;
+  top: 2vh;
+  left: 15vw;
+  right: 50vw;
+  min-width: 130px;
+  padding-bottom: 10px;
+  border: 0.5px solid #F5F5F5;
+  border-radius: 7px;*/
+}
+
+#proj_info_fields{
+    overflow-y: scroll;
+    height: 612px;
+    max-height: 612px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.info_field_a{
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 300px;
+    min-height: 220px;
+    overflow-y: scroll;
+}
+
+.info_desc{
+    margin-top: 10px;
+    background: #fff;
+    padding: 15px;        
+    height: 180px;
+    overflow-y: scroll;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+#info_assign{
+  margin-top: 10px;
+  background: #fff;
+  padding: 15px;
+  min-height: 200px;
+  max-height: auto;
+  position: relative;
+}
+#assignee_Name:focus{
+  outline: none !important;
+  box-shadow: none;
+  border-color:   #808080;
+}
+#assignee_Name:hover{
+  outline: none !important;
+  box-shadow: none;
+  outline-color: black;
+}
+.assign_li{
+  margin-bottom: 20px;
+  border-bottom: dotted 2px #E6E6FA;
+}
+.assign_li a:hover{
+  text-decoration: none;
+}
+#assign-plus-btn:focus{
+  background: none;
+  outline: none !important;
+  box-shadow: none;
+}
+#assign-plus-btn:active{
+  background: none;
+  outline: none!important;
+   box-shadow: none;
+}
+#assign-plus-btn{
+  background: none;
+}
+.assign-plus{
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 22px;
+}
+
+#modal-close:focus{
+  outline: none;
+}
+
+#adminSpan{
+  text-transform: capitalize;
+  color: green;
+  border: 2px green;
+  font-weight: 500; 
+}
+#proj-members{
+  margin-top: 10px;
+  background: #fff;
+  padding: 15px;
+  min-height: 200px;
+  max-height: auto;
+  position: relative;
+}
+
+.member_li{
+  margin-bottom: 20px;
+  border-bottom: dotted 2px #E6E6FA;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mem-li{
+  text-decoration: none;
+  color: black;
+}
+.mem-li:focus{
+  text-decoration: none;
+  color: black;
+}
+.mem-li:hover{
+  text-decoration: none;
+  color: #708090;
+}
+#add-plus-btn:focus{
+  background: none;
+  outline: none !important;
+  box-shadow: none;
+}
+#add-plus-btn:active{
+  background: none;
+  outline: none!important;
+   box-shadow: none;
+}
+#add-plus-btn{
+  background: none;
+}
+#add-plus{
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 22px;
+}
+#add-member{
+  font-weight: 500;
+  border-radius: 20px;
+  width: 70px;
+}
+#add-member:hover{
+  outline: none;
+}
+.mem-errorMesss{
+  color: red;
+  padding-top: 10px;
+  font-weight: 20;
+  text-transform: uppercase;
+}
+.ass-errorMesss{
+  color: red;
+  padding-top: 1px;
+  font-weight: 20;
+  text-transform: uppercase;
+}
+
+
+/*ASSIGNED TASK MODAL*/
+.ass-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.ass-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+.ass-modal-header {
+    padding: 2px 16px;
+    margin-top: -10px;
+    color: black;
+    margin: auto;
+}
+
+.ass-modal-body {
+  padding: 5px 16px;
+  margin: auto;
+}
+.assignSpinner{
+  display: none;
+  margin-bottom: 7px;
+ }
+
+#spinnerAss{
+  font-size:26px;
+  color: #00BFFF;
+  margin-right: 5px;
+}
+ #assSpinnerLabel{
+  font-size: 18px;
+  color: #00BFFF;
+  font-weight: 600;
+ }
+.ass-modal-footer {
+    padding: 10px 16px;
+    color: white;
+}
+.assignProgress{
+  display: none;
+  margin-bottom: 10px;
+}
+#spinnerAddMem{
+  color:  #00BFFF;
+  font-size:22px;
+  margin-right: 5px;
+}
+#spinnerAddMemLabel{
+  color:  #00BFFF;
+  font-size: 18px;
+  font-weight: 600;
+ }
+/* The Close Button */
+.ass-close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.ass-close:hover,
+.ass-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.task_details{
+  padding: 10px;
+  background:   #778899;
+  color:#fff;
+  font-weight: 600;
+  max-height: 100px;
+  min-height: 50px;
+}
+
+#task-status{
+  padding: 10px;
+  background: #778899;
+  color:#fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color:  #8B0000;
+}
+#task_completed_btn{
+  background: #4169E1;
+  color: #fff;
+  font-weight: 600;
+}
+#task_completed_btn:hover,
+#task_completed_btn:focus{
+  outline: none !important;
+  box-shadow: none;
+}
+.date-details{
+  padding: 10px;
+  background: #778899;
+  color:#fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.center{
+  margin: auto;
+  width: 100%;
+}
+
+.ass-labels{
+  font-size: 18px;
+}
+
+.ass-next-page{
+  display: none;
+}
+
+/*NEXT BUTTON MIRRORED*/
+#back-button-img{
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}
+
+.button-img{
+  width: 100px;
+  height: 20px; 
+}
+
+.comp-label{
+  color: #6495ED;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* REMOVE MEMBER */
+/*input[type="checkbox"].checkbox_el &:checked +.label-text:before{
+
+}*/
+.icon-remove-mem{
+  height: 20px;
+  width: 20px;
+  /*border: solid 2px;
+  border-radius: 15px;
+  margin-bottom: 1px;*/
+}
+.icon-remove-mem:hover{
+  cursor: pointer;
+}
+
+.rem_mem_btn,
+.rem_mem_btn:focus,
+.rem_mem_btn:hover
+{
+  background: none;
+  outline: none !important;
+  box-shadow: none;
+}
+
+#removeMemberWarn{
+  color: red;
+  font-size: 25px;
+}
+#confirmRemoveMember{
+  font-weight: 500;
+  background: red;
+  color: #fff;
+}
+#confirmRemoveMember:focus,
+#confirmRemoveMember:hover{
+  outline: none !important;
+  box-shadow: none;
+}
+.rem_mem_btn{
+   height: 30px;
+   padding-top: 0px;
+   width: 25px;
+   padding-right: 0px;
+   padding-left: 0px;
+ }
+
+ .removeSpinner{
+  display: none;
+  margin-bottom: 7px;
+ }
+
+#spinnerRem{
+  font-size:26px;
+  color: red;
+  margin-right: 5px;
+}
+ #spinnerLabel{
+  font-size: 18px;
+  color: red;
+  font-weight: 600;
+ }

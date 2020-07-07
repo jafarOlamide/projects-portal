@@ -1,0 +1,94 @@
+.eval_div{
+            margin-top: -50px;
+            background: #fff;
+            padding: 30px;
+            /*width: 1150px;*/
+        }
+
+        /*-----------------------
+        ------Summary DIV--------
+        ------------------------*/
+        .summary_div{
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            /*width: 1150px;*/
+        }
+        .view_btn{
+            background: #1D5394;
+            color: #fff;
+        }
+
+        .eval-inp:focus{
+            outline: none !important;
+            /*box-shadow: none !important;*/
+        }
+        .eval-inp:hover{
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        /*-----------------------
+        ----UPDATES TABLE DIV----
+        ------------------------*/
+        #recent_updates_div{
+            margin-bottom: 20px;
+            padding: 30px;
+            background: #fff;
+            max-height: 450px;
+            overflow-y: scroll;
+            min-height: 400px;
+            /*width: 1150px;*/
+        }
+        ::-webkit-scrollbar{
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+          background-color:   #A9A9A9;
+        }
+        #recent-projects-table-div{
+            max-height: 300px;
+            min-height: 200px;
+            overflow-y: scroll;
+        }
+        #recents-table th{
+            background: #1D5394;
+            color: #fff;
+        }
+        #recents-table td, #recents-table th{
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+        /*-----------------------
+        ----EDITING TABLE DIV----
+        ------------------------*/
+        #recent_edit_div{
+            margin-top: 20px;
+            padding: 30px;
+            background: #fff;
+            max-height: 450px;
+            min-height: 400px;
+            overflow-y: scroll;
+            /*width: 1150px;*/
+        }
+        #tasks-table-div{
+            max-height: 300px;
+            min-height: 200px;
+            overflow-y: scroll;
+        }
+        #tasks-table th{
+            background: #1D5394;
+            color: #fff;
+        }
+
+        #tasks-table td, #tasks-table th{
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            font-size: 16px;
+        }

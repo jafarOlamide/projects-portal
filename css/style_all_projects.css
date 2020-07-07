@@ -1,0 +1,54 @@
+body{
+    /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+}
+.update_lnk{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.update_lnk a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.update_lnk a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+#update_lnk_edit{
+    background-color: #90EE90; 
+    width: 80px;
+    text-align: center;
+}
+#update_lnk_upd{
+    background-color: #87CEFA;
+    text-align: center;
+}
+
+/*ALL TABLE */
+#all-projects-table{
+    width: 100%;
+}
+#all-projects-table th{
+    background: #1D5394;
+    color: #fff;
+}
+#all-projects-table td, #all-projects-table th{
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+#major-container{
+    background: #fff;
+    padding: 50px;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+#head-word{
+    text-align: center;
+}

@@ -1,0 +1,386 @@
+*{
+    box-sizing: border-box;
+/*    background-color: #DCDCDC;
+*/}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+
+#login-layout{
+    margin-top:30px;
+}
+
+#buttons-layout{
+    margin: 30px;
+}
+
+a{
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+#navBar{
+    width: 1000px;
+}
+
+th, td{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*.btn:active,*/
+.btn:hover,
+.btn:focus{
+  outline: none!important;
+  box-shadow: none;
+}
+#navBarLinks a{
+	color: black;
+}
+/****  PAGE: NAVBAR   ******/
+
+.dropdown-menu a:hover {
+background-color: transparent;
+color: #fff;
+} 
+
+.dropdown-menu a{
+    color: #fff;
+    font-weight: 500;
+}
+#nav-button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#nav-button{
+    border: none;
+    color: #fff;
+}
+#nav-button:hover{
+    outline: none !important;
+    box-shadow: none !important;
+}
+#dropdown_menu_projects{
+    background: #1D5394;    
+}
+#dropdown_menu_user{
+    background: #1D5394;
+}
+form.search-example input[type=text] {
+    padding: 10px;
+    padding-left: 15px;
+    float: left;
+    width: 80%;
+}
+
+form.search-example button {
+    position: relative;
+    float: left;
+    width: 20%;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background: #fff;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+form.search-example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#search_input{
+    border: none;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#search_input:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+#search_input:hover{
+    outline: none !important;
+    box-shadow: none;
+}
+#search_pane{
+    margin-top: -5.2px;
+}
+.liveSearch{
+    /*width: 16%;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #DADADA;
+    border-bottom: none;
+    border-top: none;
+    position: absolute;
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid gray;*/
+    
+    /*This is relative to the navbar now*/
+    /*left: 560px;
+    right: 250px;
+    left: 20%;
+    right: 0;
+    top: 47px;
+    margin-top: 21px;*/
+}
+
+/****  PAGE: DASHBOARD   ******/
+#dashboard_cont {
+    margin-top: 45px;
+}
+
+#eval_txt {
+/*    color: blue;
+*/    font-size: 20px;
+}
+
+/**********************  
+    PAGE: USERS   
+************************/
+
+#userHeadWord{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 15px;
+    background: #1D5394;
+    color: #fff;
+    width: 100%;
+}
+#headLabel{
+    font-size: 25px;
+    font-weight: 400;
+}
+#users-table{
+    width: 100%;
+}
+#users-table td, #users-table th{
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+#users-table th{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+#user_sel{
+    width: 30px;
+}
+
+#addUserButton{
+    height: 46px;
+}
+
+#deleteUserButton{
+    height: 46px;
+}
+
+#users_table_div{
+    margin-bottom: 20px;
+    padding: 30px;
+    background: #fff;
+    overflow-y: scroll;
+}
+
+.addUser-errorMesss{
+  color: red;
+  padding-top: 1px;
+  font-weight: 20;
+  text-transform: uppercase;
+}
+
+.addUserProgress{
+  display: none;
+  margin-bottom: 10px;
+}
+#addUserSpinner{
+  color:  #00BFFF;
+  font-size:22px;
+  margin-right: 5px;
+}
+#addUserSpinnerLabel{
+  color:  #00BFFF;
+  font-size: 18px;
+  font-weight: 600;
+ }
+ .delUser-errorMesss{
+    background: #fff;
+    color: red;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px;
+    display: none;
+    margin-bottom: 10px;
+ }
+ .editTd{
+    width: 30px;
+ }
+.editBtn{
+    padding: 0;
+}
+.editBtn,
+.editBtn:focus,
+.editBtn:hover
+{
+  background: none;
+  outline: none !important;
+  box-shadow: none;
+}
+.editImg{
+    padding: 5px;
+    background: #1D5394;
+    height: 30px; 
+    width: 30px;
+}
+ /**************************  
+    PAGE: ADMINISTRATORS   
+****************************/
+
+#adminHeadWord{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 15px;
+    background: #1D5394;
+    color: #fff;
+    width: 100%;
+}
+#adminLabel{
+    font-size: 25px;
+    font-weight: 400;
+}
+#admin-table{
+    width: 100%;
+}
+#admin-table td, #admin-table th{
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+#admin-table th{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+#admin_sel{
+    width: 30px;
+}
+
+#addAdminButton{
+    height: 46px;
+}
+
+#deleteAdminButton{
+    height: 46px;
+}
+
+#admin_table_div{
+    margin-bottom: 20px;
+    padding: 30px;
+    background: #fff;
+    overflow-y: scroll;
+}
+
+.addAdmin-errorMesss{
+  color: red;
+  padding-top: 1px;
+  font-weight: 20;
+  text-transform: uppercase;
+}
+
+.addAdminProgress{
+  display: none;
+  margin-bottom: 10px;
+}
+#addAdminSpinner{
+  color:  #00BFFF;
+  font-size:22px;
+  margin-right: 5px;
+}
+#addAdminSpinnerLabel{
+  color:  #00BFFF;
+  font-size: 18px;
+  font-weight: 600;
+ }
+ .delAdmin-errorMesss{
+    background: #fff;
+    color: red;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px;
+    display: none;
+    margin-bottom: 10px;
+ }
+
+ .editAdminBtn{
+    padding: 0;
+}
+.editAdminBtn,
+.editAdminBtn:focus,
+.editAdminBtn:hover
+{
+  background: none;
+  outline: none !important;
+  box-shadow: none;
+}
+/*.editImg{
+    padding: 5px;
+    background: #1D5394;
+    height: 30px; 
+    width: 30px;
+}*/
+
+
+#completed-table{
+    width: 100%;
+}
+#completed-table td, #completed-table th{
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+#completed-table th{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+#completedLabel{
+    font-size: 25px;
+    font-weight: 400;
+}
