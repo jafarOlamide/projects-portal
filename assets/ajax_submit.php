@@ -1,6 +1,8 @@
 <?php 
 
-include "../server.php";
+define('__ROOT__', dirname(dirname(__FILE__)));
+include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+
 	function updateProject(){
 		global $connection;
 

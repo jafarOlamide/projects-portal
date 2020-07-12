@@ -1,4 +1,8 @@
-<?php include_once "../admin/config/server.php"; ?>
+<?php 
+define('__ROOT__', dirname(dirname(__FILE__)));
+include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+
+?>
 <?php 
 if (isset($_GET['update'])) {
 	$project_id = $_GET['update'];

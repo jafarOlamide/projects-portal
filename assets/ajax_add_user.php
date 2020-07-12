@@ -1,5 +1,7 @@
 <?php 
-include_once "../admin/config/server.php";
+define('__ROOT__', dirname(dirname(__FILE__)));
+include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
 $email = $_POST['email'];

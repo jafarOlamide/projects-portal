@@ -1,5 +1,7 @@
 <?php
-include "../server.php";
+define('__ROOT__', dirname(dirname(__FILE__)));
+include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+
 
 //GET USER ID WITH SESSION
 $sess_user_id = $_SESSION['user_id'];

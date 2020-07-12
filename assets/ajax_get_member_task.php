@@ -1,5 +1,7 @@
 <?php 
-include_once "../admin/config/server.php";
+define('__ROOT__', dirname(dirname(__FILE__)));
+include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+
 if (isset($_GET['update'])) {
 	$proj_id = $_GET['update'];
 	//$user_id = $_POST['user_id'];

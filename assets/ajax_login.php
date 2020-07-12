@@ -1,4 +1,7 @@
-<?php include_once "../admin/config/server.php"; ?>
+<?php define('__ROOT__', dirname(dirname(__FILE__)));
+include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php"); 
+?>
+
 <?php 
 	if ($_GET['login'] && $_GET['login'] == 'true') {
 	  $tuser_email = $_POST['user_email'];
@@ -20,7 +23,7 @@
   	              $_SESSION['user_email'] = $user_row['email'];
   	              $_SESSION['user_role'] = $user_row['user_role'];
               
-              echo json_encode(['status'=>'success', 'msg'=>'dashboard.php']);
+              echo json_encode(['status'=>'success', 'msg'=>'index.php']);
 
             } else{
                 echo json_encode(['status'=>'wrong_password', 'msg'=>'Wrong password!, Please Input Correct Password']);

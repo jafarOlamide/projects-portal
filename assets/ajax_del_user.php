@@ -1,5 +1,7 @@
 <?php 
-include_once "../admin/config/server.php";
+define('__ROOT__', dirname(dirname(__FILE__)));
+include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+
 $user_ids = $_POST['user_ids'];
 
 foreach($user_ids as $user_id){

@@ -1,6 +1,8 @@
 <?php
-include_once "../admin/config/server.php";
-    $user_id = $_POST['user_id'];
+define('__ROOT__', dirname(dirname(__FILE__)));
+include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php"); 
+    
+$user_id = $_POST['user_id'];
     
     $user_query = mysqli_query($connection,"SELECT firstName, lastName, email FROM users WHERE user_id = {$user_id}");
 

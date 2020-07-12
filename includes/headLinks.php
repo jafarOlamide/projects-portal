@@ -24,3 +24,7 @@
 <script src="js/script.js"></script>
 <script src="js/ongoing_projects_script.js"></script>
 <script src="js/navbar.js"></script>
+
+<?php
+define('__ROOT__', dirname(dirname(__FILE__)));
+?>

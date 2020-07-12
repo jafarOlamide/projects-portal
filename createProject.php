@@ -61,11 +61,6 @@
                      )";
 
                 $result = mysqli_query($connection, $query);
-
-                // if (!$result) {
-                //     die("Database query failed" . mysqli_error($connection));
-                // }
-                //header("Location:assign_task.php");
                 if ($result) {
                     $last_proj_id = mysqli_insert_id($connection);
 
@@ -217,7 +212,7 @@ $("#createProject").click(function(e){
                     $("#pDueDate").val(""); 
                     $("#projectStakeholder").val("");
                     $("#projectDescription").val("");
-                    location.replace("ongoing_projects_rebrand.php");
+                    location.replace("ongoing_projects.php");
                     }
         });
       }

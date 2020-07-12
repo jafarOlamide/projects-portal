@@ -9,7 +9,8 @@
     </div>
 <div class="container">
 
-<?php include "server.php"; ?>
+<?php require_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+?>
  <?php
 if (isset($_POST['search_button'])) {
   # code...

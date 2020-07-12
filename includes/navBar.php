@@ -1,37 +1,30 @@
-<?php include 'headLinks.php'; ?>
-<?php include "server.php"; ?>
+<?php 
+include 'headLinks.php'; 
+require_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+?>
 <?php 
   if (!isset($_SESSION['user_id'])) {
-          header("Location: index.php"); 
+          header("Location: login.php");
   }
 ?>  
  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1D5394;">
  <div>
    <!-- <a class="navbar_txt navbar-brand" href="dashboard.php" style="color: #fff; font-weight: 600;"><img src="img/logo-white (1).png" style="width: 100px; height: 40px;"></a> -->
-   Project Monitor
- </div>
+  <a style="color: #fff; font-weight: 600; font-size: 25px;">Project Tracking Application</a>
+ </div> 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavItemsCollapse" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="nav-button">
     <span class="navbar-toggler-icon"></span>
   </button>
     <div class="collapse navbar-collapse" id="myNavItemsCollapse">
-  <ul class="navbar-nav ml-auto">
-      <!-- <div id="search_pane" class="mr-3">
-        <form class="form-group search-example form-inline my-2 my-lg-0 search" action="search.php" method="post" autocomplete="off">
-          <input type="text" name="search_input" placeholder="Search Projects" class="form-control" id="search_input">
-           <button type="submit" id="search_btn" name="search_button" class="btn btn-primary"><i><img src="img/if_icon-111-search_314478.svg" class="" style="font-size: 10px;"></i></button>
-        </form>
-        <div class="liveSearch">
-        </div>
-      </div> -->
-      
+  <ul class="navbar-nav ml-auto">  
       <li class="nav-item mr-3">
-        <a class="nav-link" href="dashboard.php" style="color: #fff; font-weight: 600;">Dashboard</a>
+        <a class="nav-link" href="index.php" style="color: #fff; font-weight: 600;">Dashboard</a>
       </li>
       <li class="nav-item mr-3">
         <a class="nav-link" href="createProject.php" style="color: #fff; font-weight: 600;">Add Project</a>
       </li>      
       <li class="nav-item mr-3">
-        <a class="nav-link" href="ongoing_projects_rebrand.php" style="color: #fff; font-weight: 600;">Ongoing Projects</a>
+        <a class="nav-link" href="ongoing_projects.php" style="color: #fff; font-weight: 600;">Ongoing Projects</a>
       </li> 
       <?php 
         if ($_SESSION['user_role'] == 'admin' ) {
