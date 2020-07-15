@@ -2,6 +2,7 @@
 
 define('__ROOT__', dirname(dirname(__FILE__)));
 include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "server.php");
+header('Content-Type: application/json');
 
 	function updateProject(){
 		global $connection;
@@ -26,9 +27,7 @@ include_once (__ROOT__. DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "
                             )";
 	        $insert_update_query = mysqli_query($connection, $insert_update);
 
-	        $update_id = mysql_insert_id($connection);
-
-        	header('Content-Type: application/json');
+	        $update_id = mysqli_insert_id($connection);
 	        
 	        if (!$insert_update_query) {
 	        	echo json_encode(['status'=>0, 'msg'=>mysqli_error($connection)]);

@@ -87,8 +87,8 @@ input{
    border-bottom-left-radius: 0;
  }
  #img-email{
-   /* width: 50px; 
-   height: 40px; */
+   width: 50px; 
+   height: 40px;
    display: inline;
    padding-top: 10px;
  }

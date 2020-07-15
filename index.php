@@ -5,8 +5,6 @@
 </head>
 <body style="height: 100%;">
     <?php include "includes/navBar.php"; 
-
-        echo $_SESSION['user_id'];
         $sess_user_email = $_SESSION['user_id'];
         $query_user_session = mysqli_query($connection, "SELECT user_id FROM users WHERE user_id = '{$sess_user_email}'");
         if (!$query_user_session) {
@@ -62,7 +60,7 @@
                                 echo $row['ongoing_projects'];
                                 ?>
                             </h2>
-                            <a href='ongoing_projects_rebrand.php'>
+                            <a href='ongoing_projects.php'>
                                 <button class="btn mainone-bg btn-sm view_btn">View All</button>
                             </a>
                         </div>
