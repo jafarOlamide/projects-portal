@@ -5,7 +5,6 @@
     <?php include "includes/navBar.php"; ?>
 
 </head>
-    <?php //include "includes/headLinks.php"; ?>
     <body style="background: #DCDCDC;">
         <div>
             <?php 

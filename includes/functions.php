@@ -11,6 +11,41 @@ function get_project_id_update(){
         }
 }
 
+function show_edit_roject_button(){
+  global $connection;
+  global $proj_member_role;
+	if (isset($_GET['update'])) {
+        $project_id = $_GET['update'];
+        if ($proj_member_role == 'admin') {
+          echo '<div class="mr-3"><a class="mem-li" href="edit_project.php?edit=' . $project_id .  '"><img src="img/edit-bl.svg" class="opt-ico" style="width: 22px; height: 22px;"></a></div>';
+        }
+        }
+}
+
+function show_pend_project_button(){
+  global $connection;
+  global $proj_member_role;
+
+  if (isset($_GET['update'])) {
+    $project_id = $_GET['update'];
+    if ($proj_member_role == 'admin') {
+      echo '<div class="mr-3 "><button class="opt-ico" id="pendprojectbtn" name="' . $project_id . '?>"><img src="img/push-pin.svg" style="width: 22px; height: 22px;"></button></div>';
+    }
+  }
+}
+
+function show_close_project_button(){
+  global $connection;
+  global $proj_member_role;
+  if (isset($_GET['update'])) {
+    $project_id = $_GET['update'];
+    if ($proj_member_role == 'admin') {
+      echo '<div class="mr-3"><button class="opt-ico"id="closeprojectbtn" name="' . $project_id . '"><img src="img/icons8-delete-thick.svg" style="width: 22px; height: 22px;"></button></div>';
+    }
+    
+  }
+}
+
 function updateProject(){
     global $connection;
     if (isset($_GET['update'])) {
