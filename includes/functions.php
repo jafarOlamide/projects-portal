@@ -1,4 +1,5 @@
 <?php 
+
 function get_project_id_update(){
 	global $connection;
 	if (isset($_GET['update'])) {

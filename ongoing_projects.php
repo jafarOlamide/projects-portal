@@ -127,7 +127,7 @@ if (!isset($_SESSION['user_id'])) {
                     <div id="update_div_header" class="container">
                         <div class="row container" style="padding-left: 10px;">
                             <?php 
-                            get_project_id_update();
+                              get_project_id_update();
                             ?>
                            <div class="ml-auto row">
                             <?php 
@@ -226,13 +226,6 @@ if (!isset($_SESSION['user_id'])) {
                   ?>
                   <div id="info_header" class="container row">
                     <h5 class="proj_title_txt">Project Information</h5>
-                    <!-- <div class="ml-auto row"> -->
-                      <!-- <div class="mr-2 opt-ico"><a class="mem-li" href="edit_project.php?edit=<?=$project_id?>"><img src="img/edit-bl.svg" style="width: 22px; height: 22px;"></a></div>
-                      <div class="mr-2 opt-ico"><button id="pendprojectbtn" name="<?php //echo $project_id; ?>"><img src="img/push-pin.svg" style="width: 22px; height: 22px;"></button></div>
-                      <div class="mr-2 opt-ico"><button id="closeprojectbtn" name="<?php //echo $project_id; ?>"><img src="img/icons8-delete-thick.svg" style="width: 22px; height: 22px;"></button></div> -->
-                      <!-- <div class="mr-2"><button class="opt-ico" id="deleteprojectbtn" name="<?php //echo $project_id; ?>"><img src="img/recycling-bin-black.svg" style="width: 22px; height: 22px;"></button></div>
-                      <div><button type="submit" class="opt-ico" id="projinfo-icon"><i><img src="img/menu-3.svg" class="" style=" height: 22px;"></i></button></div> -->
-                    <!-- </div> -->
                   </div>
                   <!----Add Member Modal -->
                   <div id="addMemberModal" class="ass-modal">
