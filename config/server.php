@@ -1,5 +1,5 @@
 <?php
-$connection = mysqli_connect('localhost', 'root', '', 'officeprojectscheduler');
+$connection = mysqli_connect('', '', '', '');
 
         if (!$connection) {
             die("Database Connection Failed: " . mysqli_error());
