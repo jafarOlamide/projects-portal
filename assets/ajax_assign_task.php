@@ -70,9 +70,9 @@ header('Content-Type: application/json');
 				//     $mail->Port = '';                                    // TCP port to connect to
 
 				//     //Recipients
-				//     $mail->setFrom('waleade99@gmail.com');
+				//     $mail->setFrom('xyz@gmail.com');
 				//     $mail->addAddress($user_email);     // Add a recipient
-				//     $mail->addCC('jafarolamidekale@gmail.com');
+				//     $mail->addCC('abcd@gmail.com');
 
 				//     $mail_body = "Your Task: " . $assignee_task . "</br> " .
 				//     			 "Date Assigned: " . $date_assigned . "</br> " .
